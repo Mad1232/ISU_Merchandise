@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/ISU_Merchandise/static/css/main.dc4d6ff2.css",
-    "main.js": "/ISU_Merchandise/static/js/main.c22cbac9.js",
-    "index.html": "/ISU_Merchandise/index.html",
-    "main.dc4d6ff2.css.map": "/ISU-Merchandise/static/css/main.dc4d6ff2.css.map",
-    "main.c22cbac9.js.map": "/ISU-Merchandise/static/js/main.c22cbac9.js.map"
+    "main.css": "/static/css/main.dc4d6ff2.css",
+    "main.js": "/static/js/main.c22cbac9.js",
+    "index.html": "/index.html",
+    "main.dc4d6ff2.css.map": "/static/css/main.dc4d6ff2.css.map",
+    "main.c22cbac9.js.map": "/static/js/main.c22cbac9.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc4d6ff2.css",
-    "static/js/main.c22cbac9.js"
+    "static/css/main.dc4d6ff2.css"
   ]
 }
