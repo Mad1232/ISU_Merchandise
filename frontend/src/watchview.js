@@ -1,7 +1,7 @@
 // WatchView.js
 import React, { useState, useEffect } from 'react';
 
-export function WatchView({ onCheckoutClick, updateCart }) {
+export function WatchView({ updateCart }) {
   const [watches, setWatches] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredWatches, setFilteredWatches] = useState([]);
@@ -52,10 +52,6 @@ export function WatchView({ onCheckoutClick, updateCart }) {
   };
 
 
-  const handleCheckoutClick = () => {
-
-    onCheckoutClick(); // Call the onCheckoutClick function passed from App.js
-  };
 
   return (
     <div className="container">
@@ -106,10 +102,6 @@ export function WatchView({ onCheckoutClick, updateCart }) {
           </div>
         ))}
       </div>
-
-      <button
-        className="btn btn-light bg-warning container-fluid d-flex justify-content-center mt-2" onClick={handleCheckoutClick}> Checkout </button>
-      {/* if checkout is Clicked is true then, navigate to page, checkoutview.js and make sure to pass in props like all selected watches which should have names, image, description and price. */}
     </div>
   );
 }
