@@ -40,7 +40,7 @@ function App() {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav me-auto mb-2 mb-md-0">
                   <li className="nav-item">
-                    <Link className="nav-link" to="/">Home</Link>
+                    <Link className="nav-link" to="/home">Home</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/shoes">Shoes</Link>
@@ -78,7 +78,7 @@ function App() {
                   <Link className="btn btn-lg btn-primary" to="/watches">View products &raquo;</Link>
                 </div>
               } />
-              <Route path="/shoes" element={<ShoeView updateCart={updateCart} />} />
+              <Route path="/shoes" element={<ShoeView updateCart={updateCart}/>} />
               <Route path="/watches" element={<WatchView updateCart={updateCart} cart={cart} />} />
               <Route path="/about" element={<AboutView />} />
               <Route path="/update" element={<UpdateView />} />
