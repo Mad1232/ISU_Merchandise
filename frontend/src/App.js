@@ -70,7 +70,7 @@ function App() {
           {/* Main content */}
           <main className="container">
             <Routes>
-              <Route path="/" element={
+              <Route path="/home" element={
                 <div className="p-5 rounded text-center">
                   <h1>Iowa State Merchandise</h1>
                   <a href="https://ibb.co/N7Jcf4w"><img src="https://i.ibb.co/Tr79JCz/Homepage2.jpg" alt="Homepage2" className="img-fluid" /></a>
@@ -93,10 +93,10 @@ function App() {
           {/* Footer */}
           <footer className="footer mt-auto py-3 bg-light">
             <div className="container text-center">
-              <span className="text-muted"><a href="#"> Contact us:</a></span><br />
+              <span className="text-muted"><a href="about"> Contact us:</a></span><br />
               <span>Email: <u>info@soleelegance.com</u></span><br />
               <span>Phone: +1 (555) 555-5555</span><br />
-              <span>Developed by <a href="#">Prakarsha Poudel</a></span>
+              <span>Developed by <a href="about">Prakarsha Poudel</a></span>
             </div>
           </footer>
         </div>
