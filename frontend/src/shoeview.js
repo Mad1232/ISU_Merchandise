@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export function ShoeView({ onCheckoutClick, updateCart}) {
+export function ShoeView({ updateCart}) {
     const [shoes, setShoes] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredShoes, setFilteredShoes] = useState([]);
@@ -45,10 +45,6 @@ export function ShoeView({ onCheckoutClick, updateCart}) {
     };
     
 
-    const handleCheckoutClick = () => {
-        onCheckoutClick(); // Call the onCheckoutClick function passed from App.js
-    };
-
     return (
         <div className="container">
             {/* Search by title */}
@@ -86,7 +82,6 @@ export function ShoeView({ onCheckoutClick, updateCart}) {
                 ))}
             </div>
 
-            <button className="btn btn-light bg-warning container-fluid d-flex justify-content-center mt-2" onClick={handleCheckoutClick}>Checkout</button>
         </div>
     );
 }
